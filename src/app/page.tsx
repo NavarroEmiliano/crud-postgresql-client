@@ -1,9 +1,12 @@
-import React from 'react'
+import ButtonAuth from "@/components/ButtonAuth";
 
 const HomePage = () => {
-  return (  
-    <h1>HomePage</h1>
-  )
-}
+  return (
+    <>
+      <h1>HomePage</h1>
+      <ButtonAuth/>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
