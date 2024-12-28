@@ -14,11 +14,10 @@ const Dashboard = () => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        authorization: `Bearer ${session?.accessToken}`,
+        authorization: `Bearer ${session?.user?.access_token}`,
       },
     });
     const cats = await res.json();
-    console.log(cats);
   };
 
   return (
